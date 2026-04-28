@@ -98,10 +98,10 @@ if st.button(" Predict"):
 
     try:
         if disease == "Heart Disease":
-            data = pd.read_csv("dataset/heart.csv")
+            data = pd.read_csv("heart.csv")
             X = data.drop("target", axis=1)
         else:
-            data = pd.read_csv("dataset/diabetes.csv")
+            data = pd.read_csv("diabetes.csv")
             X = data.drop("Outcome", axis=1)
 
         explainer = shap.TreeExplainer(model_used)
