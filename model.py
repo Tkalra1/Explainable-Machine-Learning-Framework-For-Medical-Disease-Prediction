@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 
 # Load dataset
-data = pd.read_csv("dataset/heart.csv")
+data = pd.read_csv("heart.csv")
 
 X = data.drop("target", axis=1)
 y = data["target"]
